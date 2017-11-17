@@ -1,0 +1,48 @@
+.content{
+  position: relative;
+  /*width:100%;*/
+  /*float: right;*/
+}
+.mapShow{
+  width:100%;
+  height:800px;
+  margin-top:80px
+}
+.chart{
+  width:100% !important;
+  height:800px!important;
+  float: left;
+
+}
+.floatTitle{
+  position: absolute;
+  top: -10px;
+  left:0;
+  height: 80px;
+  line-height: 80px;
+  width:100%;
+  background: rgba(255,255,255,0.5);
+  padding: 0 30px;
+  font-size:18px;
+}
+.action{
+  cursor: pointer;
+}
+.conditions{
+  display: inline-block;
+  float: right;
+  font-size:16px;
+}
+
+.checkboxStyle{
+  font-size:15px;
+  font-weight: 400;
+  margin-left: 20px ;
+}
+.sideLine{
+  width:200px;
+  height:100%;
+  background: #fff;
+  border-right: 1px solid #d8d8d8;
+  float: left;
+}

@@ -1,0 +1,50 @@
+<!--<div class="sideLine">-->
+
+
+
+<!--</div>-->
+
+<div class="content">
+  <div class="floatTitle">
+    <span class="action" (click)="sideBarSwitch()">
+      <i *ngIf="!sideBarShow" class="anticon anticon-menu-unfold"></i>
+      <i *ngIf="sideBarShow" style="font-size:18px;" class="anticon anticon-close"></i>
+      <span *ngIf="!sideBarShow">事件列表</span>
+    </span>
+    <span class="conditions">
+      <label nz-checkbox [(ngModel)]="forMaintenance_checked" class="checkboxStyle" (ngModelChange)="_console($event)">
+        <span>待维修&nbsp;<i style="color:grey;" class="anticon anticon-environment"></i></span>
+      </label>
+      <label nz-checkbox [(ngModel)]="toRepair_checked" class="checkboxStyle"  (ngModelChange)="_console($event)">
+        <span>待检修&nbsp;<i style="color:red;" class="anticon anticon-environment"></i></span>
+      </label>
+      <label nz-checkbox [(ngModel)]="pendingCheck_checked" class="checkboxStyle"  (ngModelChange)="_console($event)">
+        <span>待确认&nbsp;<i style="color:greenyellow;" class="anticon anticon-environment"></i></span>
+      </label>
+      <label nz-checkbox [(ngModel)]="PanelNum" class="checkboxStyle"  (ngModelChange)="_console($event)">
+        <span>面板编号</span>
+      </label>
+
+      <nz-datepicker [(ngModel)]="_date"
+                     style="font-size:14px;"
+                     [nzPlaceHolder]="'巡检日期'"></nz-datepicker>
+
+       <nz-select style="width: 150px;height: 30px;font-size:14px;"
+                  [nzPlaceHolder]="'请选择太阳能电厂'"
+                  [(ngModel)]="selectedOption" nzAllowClear>
+      <nz-option
+        *ngFor="let option of options"
+        [nzLabel]="option.label"
+        [nzValue]="option"
+        [nzDisabled]="option.disabled">
+      </nz-option>
+    </nz-select>
+
+    </span>
+  </div>
+
+  <div class="mapShow">
+    <!--<echart  [chartType]="mapChart"  [chartSet]="mapChartCharSet"  class="chart" ></echart>-->
+
+  </div>
+</div>

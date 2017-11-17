@@ -1,5 +1,6 @@
 import { Directive, ElementRef, HostListener, Input, OnInit } from '@angular/core';
 import * as echarts from 'echarts';
+import { Http, Response } from '@angular/http';
 
 @Directive({
     selector: 'echart'
@@ -13,6 +14,13 @@ export class EChartOptionDirective1 implements OnInit {
     }
 
     public ngOnInit(): void {
+
+    //   $.get('./china.json', function (chinaJson) {
+    //
+    //   echarts.registerMap('china', chinaJson); // 注册地图
+    //
+    // });
+
 
         echarts.init(this.el.nativeElement).setOption(this.chartType);
     }

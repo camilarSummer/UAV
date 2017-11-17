@@ -22,7 +22,9 @@ export class LoginComponent {
 
 
   login(){
-
+    if(this.username=='admin' && this.password=="123456"){
+      this.router.navigate(['check/check-overview'])
+    }
 
 
   }

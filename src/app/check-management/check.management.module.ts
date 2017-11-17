@@ -9,11 +9,13 @@ import { CheckOverviewComponent } from './check-overview/check-overview.componen
 import { CheckManagementRouting } from './check.management.routing'
 import { NgZorroAntdModule } from 'ng-zorro-antd';
 import { EChartOptionDirective1 } from './echart-option.directive';
+import { CheckDetailComponent } from './check-detail/check-detail.component';
 @NgModule({
   declarations: [
     CheckManagementComponent,
     CheckOverviewComponent,
-    EChartOptionDirective1
+    EChartOptionDirective1,
+    CheckDetailComponent
   ],
   imports: [
     CommonModule,

@@ -10,7 +10,7 @@ declare var echarts;
 export class EChartOptionDirective1 implements OnChanges {
   @Input('chartType') chartType: any;
 
-  public url = "assets/json/chinamap.json";
+  public url = "./china.json";
   public elment:any;
 
   constructor(private el: ElementRef,public http: Http) {}
